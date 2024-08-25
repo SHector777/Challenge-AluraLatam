@@ -135,7 +135,9 @@ function cargarMensajeDeError(){
 
     document.querySelector('.contenedor-main-resultado-final').style.display = "none";
     document.querySelector('.contenedor-main-resultado-previo').style.display = "flex";
-    document.querySelector(".imagen-resultado").src = "./assets/segundaImagenEditada.png";
+    //document.querySelector(".imagen-resultado").src = "./assets/segundaImagenEditada.png";
+    document.querySelector(".imagen-resultado").style.display = "none";
+    document.querySelector('.imagen-error').style.display = "flex";
 
     let subTitulo = document.querySelector('.resultado-subtitulo');
     subTitulo.innerHTML = '¡¡Oh No Hubo un ERROR!!';
