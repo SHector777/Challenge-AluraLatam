@@ -178,5 +178,11 @@ function botonCopiar(){
     
     navigator.clipboard.writeText(texto);
 
+    document.querySelector('.boton-copiar').innerHTML = "Mensaje Copiado";
+
+    setTimeout(() => {
+        document.querySelector('.boton-copiar').innerHTML = "Copiar";
+    }, 1000);
+
     return;
 }
