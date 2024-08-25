@@ -116,7 +116,7 @@ function desencriptar(texto){
 }
 
 function limpiarSeccionResultado(){
-    let aux = document.querySelector('.contendor-main-resultado-previo');
+    let aux = document.querySelector('.contenedor-main-resultado-previo');
     aux.style.display = "none";
     return;
 };
@@ -134,7 +134,7 @@ function mostrarResultado(texto){
 function cargarMensajeDeError(){
 
     document.querySelector('.contenedor-main-resultado-final').style.display = "none";
-    document.querySelector('.contendor-main-resultado-previo').style.display = "flex";
+    document.querySelector('.contenedor-main-resultado-previo').style.display = "flex";
     document.querySelector(".imagen-resultado").src = "../assets/segundaImagen.png";
 
     let subTitulo = document.querySelector('.resultado-subtitulo');
