@@ -139,6 +139,11 @@ function cargarMensajeDeError(){
     document.querySelector('.imagen-resultado').style.display = "none";
     document.querySelector('.imagen-error').style.display = "flex";
 
+    let mediaqueryList = window.matchMedia("(max-width: 768px)");
+    if(mediaqueryList.matches === true) {
+        document.querySelector('.imagen-error').style.display = "none";
+    }
+
     let subTitulo = document.querySelector('.resultado-subtitulo');
     subTitulo.innerHTML = '¡¡Oh No Hubo un ERROR!!';
     subTitulo.style.color = "#F93005"
